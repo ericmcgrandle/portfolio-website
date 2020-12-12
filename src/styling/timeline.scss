@@ -52,6 +52,7 @@
     .timeline-button:hover {
       width: 22px;
       height: 22px;
+      background-color: #ffffff;
     }
 
     .timeline-button:focus {
@@ -60,6 +61,41 @@
       background-color: orange;
 
       outline: none;
+    }
+
+    .summary-event {
+      position: absolute;
+      top: 25px;
+      // position left is dynamically set inside of IndividualButton
+      transform: translateX(-43%);
+      color: white;
+      width: 150px;
+      padding: 2px 3px;
+      border-radius: 5px;
+      border: 1px solid black;
+      text-align: center;
+
+      .summary-event-title {
+        margin: 10px;
+        font-size: 12px;
+      }
+      .summary-event-date {
+        margin: 4px;
+        font-size: 12px;
+      }
+    }
+
+    .summary-event::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: orange;
+      display: block;
+      position: absolute;
+      top: -8px;
+      margin-left: -2px;
+      left: 50%;
+      transform: rotate(-45deg) translateX(-50%);
     }
   } // .timeline
   
