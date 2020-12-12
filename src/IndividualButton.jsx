@@ -8,7 +8,7 @@ function IndividualButton(props) {
   const position = findPosition(props.date);
 
   return (
-      <button onClick={ () => { props.handleClick(props.id) } } className="timeline-button" style={ { left: `${position}%` } } >
+      <button onClick={ () => { props.handleClick(props.id, position) } } className="timeline-button" style={ { left: `${position}%` } } >
       </button>
   )     
 }

@@ -4,15 +4,18 @@ import { useState, Fragment } from 'react';
 import IndividualButton from "./IndividualButton";
 import ShowEvent from "./ShowEvent";
 
-function Events() {
+function Events(props) {
 
   const [selected, setSelected] = useState({
     title: 'About Me',
     description: 'Graduated with Honour Roll Recognition. Completed two International Baccalaureate programs, English and Psychology.'
   });
 
-  const updateSelected = (id) => {
+  const updateSelected = (id, position) => {
+    // update selected state to show summary of event
     setSelected(events[id - 1]);
+    // update progress bar to correct event
+    props.setProgressBar(position)
   }
 
   const events = [
