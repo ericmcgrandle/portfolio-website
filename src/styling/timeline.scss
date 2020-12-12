@@ -12,6 +12,7 @@
   }
   
   .timeline {
+    position: relative;
     margin: 50px 60px;
     height: 4px;
     background-color: #ccc;
@@ -37,9 +38,14 @@
       background-color: #ccc;
       display: block;
     }
+
+    .timeline-end {
+      // align-self: flex-end;
+    }
   
     .timeline-button {
-      content: '';
+      position: absolute;
+      // position left is dynamically set inside of IndividualButton
       width: 20px;
       height: 20px;
       background-color: #ccc;
