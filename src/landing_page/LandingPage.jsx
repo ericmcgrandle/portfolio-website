@@ -1,6 +1,16 @@
+import { useHistory } from "react-router-dom";
+
 import './styling/landing_page.scss';
 
 function LandingPage() {
+
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+    let path = `/about`; 
+    history.push(path);
+  }
+
   return (
     <div className="main">
 
@@ -11,7 +21,7 @@ function LandingPage() {
       </div>
 
       <div className="buttons">
-        <button>About Me</button>
+        <button onClick={routeChange}>About</button>
         <button>View My Work</button>
         <button>Contact Me</button>
       </div>

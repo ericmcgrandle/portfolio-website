@@ -1,8 +1,8 @@
-.main {
+.about-me-main {
   border: 3px solid black;
   height: 72vh;
   width: 80vw;
-  margin: 17vh 5vw 11vh 15vw;
+  margin: 10vh auto;
 
   .title { 
     color: #ffffff;
@@ -13,7 +13,7 @@
   
   .timeline {
     position: relative;
-    margin: 50px 60px;
+    margin: 50px 60px 0px 100px;
     height: 4px;
     background-color: #ccc;
 
@@ -100,8 +100,8 @@
   } // .timeline
   
   .about-event {
-    border: 1px solid black;
-    margin: 10em 0em;
+    // border: 1px solid black;
+    margin: 10em 1.5em;
 
     .event-title {
       color: #ffffff;
@@ -109,7 +109,8 @@
     }
     .event-description {
       color: #ffffff;
-      text-align: center;
+      text-align: justify;
+      line-height: 1.5;
     }
   } // .about-event
 
