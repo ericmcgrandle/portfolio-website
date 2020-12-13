@@ -42,7 +42,7 @@ function Events(props) {
       id: 4,
       title: 'Buying an Ambulance',
       date: { year: 2018, month: 6 },
-      description: "With dreams of road-tripping to Mexico I bought an ambulance!",
+      description: "With dreams of road-tripping to Mexico I bought a retired BC ambulance!",
     },
     {
       id: 5,

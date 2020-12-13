@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
-import LandingPage from './LandingPage';
-import AboutMe from './AboutMe';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AboutMe />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
