@@ -1,5 +1,5 @@
 .projects-main {
-  border: 3px solid black;
+  // border: 3px solid black;
   height: 85vh;
   width: 80vw;
   margin: 3vh auto;
@@ -22,6 +22,17 @@
         text-decoration: none;
         color: white;
         font-size: 18px;
+      }
+      a:hover {
+        animation: move 5s infinite ease-in-out;
+      }
+      @keyframes move {
+        50% {
+          transform: scale(1.25);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
     }
   }

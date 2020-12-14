@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <ul className="nav-bar">
       <li onClick={() => routeChange('about')}>About Me</li>
-      <li onClick={() => routeChange('work')}>My Work</li>
+      <li onClick={() => routeChange('projects')}>My Work</li>
       <li onClick={() => routeChange('contact')}>Contact Me</li>
     </ul>
      
