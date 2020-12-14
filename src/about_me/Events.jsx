@@ -8,7 +8,10 @@ function Events(props) {
 
   const [selected, setSelected] = useState({
     title: 'About Me',
-    description: 'Graduated with Honour Roll Recognition. Completed two International Baccalaureate programs, English and Psychology.'
+    description: `My name is Eric. I'm 21. From a very young age I was the person to go to when you had technology problems. In elementary school teachers would find me when they couldn't get their projectors to work. In ICT class in highschool I would write 4 different solutions to coding problems
+                  in the first 15 minutes of class so that me and my buddies could play games together for the rest of the class. I genuinely love to program. I, as strange as it may sounds, love to get stuck on a problem. Getting stuck provides an opportunity to find better
+                  solutions, faster code, a new approach that I never thought of before. I love to learn and no matter how long you have been programming for, there is always something new to learn. This excites me and I am looking forward to starting my career in the
+                  Tech industry.`
   });
 
   const updateSelected = (id, position) => {
@@ -64,7 +67,7 @@ function Events(props) {
       date: { year: 2019, month: 2 },
       description: `After completing my home on wheels, I set off at the beginning of February. This trip took me down the west coast of the United States and throughout the majority of Mexico.
                     Ask me about the time I rotated my tires, on a 10,000lbs, dually, ambulance, in the middle of the desert with only a bottle jack and some 4x4's. Or about the time I crashed a drone into a
-                    cliffside, tried to recover it, got stuck and needed rescuing from some very friendly Mexican cowboys.`,
+                    cliffside, tried to recover it, got stuck in a very precarious location, and needed rescuing from some friendly Mexican cowboys.`,
     },
     {
       id: 8,
