@@ -1,6 +1,10 @@
 import { useHistory } from "react-router-dom";
 
+// styling
 import './styling/landing_page.scss';
+
+// images
+import symposium from '../projects/images/Symposium-homepage.png'
 
 function LandingPage() {
 
@@ -17,13 +21,23 @@ function LandingPage() {
       <div className="name">
         <p className="full-name">Eric McGrandle</p>
         <p className="title">Full Stack Developer</p>
-        <p className="summary">I Strongly Believe In Learning By Doing</p>
       </div>
 
       <div className="buttons">
         <button onClick={() => routeChange('about')}>About</button>
         <button onClick={() => routeChange('projects')}>View My Work</button>
         <button onClick={() => routeChange('contact')}>Contact Me</button>
+      </div>
+
+      <div className="project-container">
+        <p className="title">Latest Project</p>
+        <div className="image">
+          <img src={symposium} alt="Symposium" />
+        </div>
+        <div className="links">
+          <a href="https://github.com/ericmcgrandle/symposium" target="_blank" rel="noopener noreferrer">Source Code</a>
+          <a href="https://the-symposium.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live Version</a>
+        </div>
       </div>
       
     </div>
