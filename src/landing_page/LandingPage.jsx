@@ -22,7 +22,7 @@ function LandingPage() {
 
       <div className="buttons">
         <button onClick={() => routeChange('about')}>About</button>
-        <button>View My Work</button>
+        <button onClick={() => routeChange('projects')}>View My Work</button>
         <button onClick={() => routeChange('contact')}>Contact Me</button>
       </div>
       
