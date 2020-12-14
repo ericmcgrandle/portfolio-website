@@ -6,9 +6,9 @@ function LandingPage() {
 
   const history = useHistory();
 
-  const routeChange = () =>{ 
-    let path = `/about`; 
-    history.push(path);
+  const routeChange = (path) =>{ 
+    let newPath = `/${path}`; 
+    history.push(newPath);
   }
 
   return (
@@ -21,9 +21,9 @@ function LandingPage() {
       </div>
 
       <div className="buttons">
-        <button onClick={routeChange}>About</button>
+        <button onClick={() => routeChange('about')}>About</button>
         <button>View My Work</button>
-        <button>Contact Me</button>
+        <button onClick={() => routeChange('contact')}>Contact Me</button>
       </div>
       
     </div>
