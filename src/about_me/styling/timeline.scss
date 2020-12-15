@@ -1,3 +1,5 @@
+$timeline-bar-colour: rgb(0, 204, 255);
+
 .about-me-main {
   // border: 3px solid black; 
   height: 72vh;
@@ -19,7 +21,8 @@
 
     .timeline-progress {
       height: 100%;
-      background-color: orange;
+      background-color: $timeline-bar-colour;
+      transition: 2s;
     }
     
     .timeline-items {
@@ -58,7 +61,7 @@
     .timeline-button:focus {
       width: 22px;
       height: 22px;
-      background-color: orange;
+      background-color: $timeline-bar-colour;
 
       outline: none;
     }
@@ -89,7 +92,7 @@
       content: '';
       width: 10px;
       height: 10px;
-      background-color: orange;
+      background-color: $timeline-bar-colour;
       display: block;
       position: absolute;
       top: -8px;
@@ -111,6 +114,16 @@
       color: #ffffff;
       text-align: justify;
       line-height: 1.5;
+      animation: type 3s;
+      overflow: hidden;
+    }
+    @keyframes type {
+      0% {
+        width: 0ch;
+      }
+      100% {
+        width: 805ch;
+      }
     }
   } // .about-event
 
