@@ -1,6 +1,7 @@
 import { useState, Fragment } from 'react';
 
 // Components
+import Title from "./Title";
 import Events from "./Events";
 import NavBar from "../nav_bar/NavBar";
 
@@ -16,7 +17,7 @@ function AboutMe() {
       <NavBar />
       
       <div className="about-me-main">
-        <p className="title">Through The Years</p>
+        <Title />
 
         <div className="timeline">
           <div className="timeline-progress" style={ { width: `${progressBar}%` } }></div>
