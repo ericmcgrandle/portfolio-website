@@ -103,7 +103,7 @@ $timeline-bar-colour: rgb(0, 204, 255);
   } // .timeline
   
   .about-event {
-    // border: 1px solid black;
+    width: 100%;
     margin: 10em 1.5em;
 
     .event-title {
@@ -112,7 +112,7 @@ $timeline-bar-colour: rgb(0, 204, 255);
     }
     .event-description {
       color: #ffffff;
-      text-align: justify;
+      // text-align: justify;
       line-height: 1.5;
     }
   } // .about-event
