@@ -10,7 +10,7 @@ function ShowEvent(props) {
   useEffect(() => {
     setDesc(props.description[0]);
     setIndex(1);
-  }, [props.title])
+  }, [props.description])
 
   // setInterval to 'type' each character in description
   // clearInterval when index matches description length
@@ -39,7 +39,7 @@ function ShowEvent(props) {
 
   return (
     <div className="about-event">
-      <h3 className="event-title">{props.title}</h3>
+      <h2 className="event-title">{props.title}</h2>
       <p className="event-description">{desc}</p>
     </div>   
   )     

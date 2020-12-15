@@ -2,6 +2,7 @@ import { useState, Fragment } from 'react';
 
 // components
 import IndividualButton from "./IndividualButton";
+import ShowFirstEvent from "./ShowFirstEvent";
 import ShowEvent from "./ShowEvent";
 
 function Events(props) {
@@ -114,10 +115,19 @@ function Events(props) {
     <Fragment>
         { mapEvents(events, updateSelected) }
 
-        <ShowEvent 
+        { /* First Render, no animation for description */
+          (selected.title === 'About Me' ) && 
+          <ShowFirstEvent 
           title={selected.title}
-          description={selected.description}
-        />
+          description={selected.description} /> 
+        }
+        { /* User has clicked on event, yes animation for description */
+          (selected.title !== 'About Me' ) &&
+          <ShowEvent 
+            title={selected.title}
+            description={selected.description}
+          />
+        }
     </Fragment>
   )    
 };
