@@ -114,16 +114,6 @@ $timeline-bar-colour: rgb(0, 204, 255);
       color: #ffffff;
       text-align: justify;
       line-height: 1.5;
-      animation: type 3s;
-      overflow: hidden;
-    }
-    @keyframes type {
-      0% {
-        width: 0ch;
-      }
-      100% {
-        width: 805ch;
-      }
     }
   } // .about-event
 
