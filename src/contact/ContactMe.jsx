@@ -2,6 +2,8 @@ import { Fragment } from 'react';
 
 // components
 import NavBar from '../nav_bar/NavBar'
+import LeftArrow from '../side_arrows/LeftArrow';
+import RightArrow from '../side_arrows/RightArrow';
 
 import './styling/contact_me.scss'
 
@@ -15,6 +17,8 @@ function ContactMe() {
   return (
     <Fragment>
       <NavBar />
+      <LeftArrow />
+      <RightArrow />
 
       <div className="contact-me-main">
         <div className="icons">

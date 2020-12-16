@@ -4,6 +4,8 @@ import { useState, Fragment } from 'react';
 import Title from "./Title";
 import Events from "./Events";
 import NavBar from "../nav_bar/NavBar";
+import LeftArrow from '../side_arrows/LeftArrow';
+import RightArrow from '../side_arrows/RightArrow';
 
 // Styling
 import './styling/timeline.scss';
@@ -15,6 +17,8 @@ function AboutMe() {
   return (
     <Fragment>
       <NavBar />
+      <LeftArrow />
+      <RightArrow />
       
       <div className="about-me-main">
         <Title />

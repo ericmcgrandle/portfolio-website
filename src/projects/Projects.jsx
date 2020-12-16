@@ -2,6 +2,8 @@ import { Fragment, useState } from 'react';
 
 // components
 import NavBar from '../nav_bar/NavBar'
+import LeftArrow from '../side_arrows/LeftArrow';
+import RightArrow from '../side_arrows/RightArrow';
 
 // styling
 import './styling/projects.scss'
@@ -17,8 +19,6 @@ import symposiumGif from './images/Symposium-gif.gif';
 import goodAFPizzaGif from './images/GoodAFPizza-gif.gif';
 import schedulerGif from './images/Scheduler-gif.gif';
 
-
-
 function Projects() {
 
   const [symposiumHover, setSymposiumHover] = useState(false);
@@ -28,6 +28,8 @@ function Projects() {
   return (
     <Fragment>
       <NavBar />
+      <LeftArrow />
+      <RightArrow />
 
       <div className="projects-main">
 
