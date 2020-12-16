@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 // components
 import NavBar from '../nav_bar/NavBar'
@@ -21,9 +21,19 @@ import schedulerGif from './images/Scheduler-gif.gif';
 
 function Projects() {
 
+  // States for GIFS
   const [symposiumHover, setSymposiumHover] = useState(false);
   const [pizzaHover, setPizzaHover] = useState(false);
   const [schedulerHover, setSchedulerHover] = useState(false);
+
+  // Preload GIFS
+  const gifs = [symposiumGif, goodAFPizzaGif, schedulerGif];
+  useEffect(() => {
+    gifs.forEach((gif) => {
+      console.log('loading gif', gif);
+      new Image().src = gif;
+    });
+  }, []);
 
   return (
     <Fragment>
