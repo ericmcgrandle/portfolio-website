@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import TextTransition, { presets } from "react-text-transition";
  
 const years = [
-  "1999's", "2000's", "2001's", "2002's", "2003's", "2004's", "2005's", "2006's", "2007's", "2008's", "2009's", "2010's", "2011's", "2012's", "2013's", "2014's", "2015's", "2016's", "2017's", "2018's", "2019's", "2020's", "2021's", "Years"
+  "2005's", "2006's", "2007's", "2008's", "2009's", "2010's", "2011's", "2012's", "2013's", "2014's", "2015's", "2016's", "2017's", "2018's", "2019's", "2020's", "2021's", "Years"
 ];
 
 function Title() {
@@ -11,7 +11,7 @@ function Title() {
   useEffect(() => {
     const interval = setInterval(() =>
       setIndex(index => index + 1),
-      130
+      175
     );
 
     // Stops interval when it reaches "Years"
