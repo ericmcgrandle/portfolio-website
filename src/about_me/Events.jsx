@@ -125,6 +125,7 @@ function Events(props) {
           (selected.title !== 'About Me' ) &&
           <ShowEvent 
             title={selected.title}
+            date={selected.date}
             description={selected.description}
           />
         }

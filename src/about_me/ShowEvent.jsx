@@ -36,10 +36,16 @@ function ShowEvent(props) {
     return () => clearInterval(interval);
   }, [index]);
 
+  // Format date
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const month = months[props.date.month - 1];
+  const date = `${month}, ${props.date.year}`;
+
 
   return (
     <div className="about-event">
       <h2 className="event-title">{props.title}</h2>
+      <h3 className="event-date">{date}</h3>
       <p className="event-description">{desc}</p>
     </div>   
   )     
