@@ -15,7 +15,7 @@ $timeline-bar-colour: rgb(0, 204, 255);
   
   .timeline {
     position: relative;
-    margin: 50px 60px 0px 100px;
+    margin: 140px 60px 0px 100px;
     height: 4px;
     background-color: #ccc;
 
@@ -80,11 +80,11 @@ $timeline-bar-colour: rgb(0, 204, 255);
 
       .summary-event-title {
         margin: 10px;
-        font-size: 12px;
+        font-size: 16px;
       }
       .summary-event-date {
         margin: 4px;
-        font-size: 12px;
+        font-size: 16px;
       }
     }
 
@@ -114,6 +114,7 @@ $timeline-bar-colour: rgb(0, 204, 255);
       color: #ffffff;
       line-height: 1.5;
       font-size: 20px;
+      text-align: justify;
     }
   } // .about-event
 
