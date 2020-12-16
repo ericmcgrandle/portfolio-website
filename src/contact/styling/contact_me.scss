@@ -17,17 +17,6 @@
       a {
         width: 100%;
         text-align: center;
-
-        // Zoom in / out animation
-        img:hover {
-          animation: moveIcon 5s infinite ease-in-out;
-          @keyframes moveIcon {
-            50% {
-              transform: scale(1.15);
-            }
-          }
-        }
-        
       }
 
       .contact-text {
@@ -42,19 +31,16 @@
       .email-text {
         margin-top: 0px;
       }
+    } // .icon
 
-      // Zoom in / out animation
-      .contact-text:hover {
-        animation: moveText 5s infinite ease-in-out;
-        @keyframes moveText {
-          50% {
-            transform: scale(1.5);
-          }
+    .icon:hover {
+      animation: moveIcon 5s infinite ease-in-out;
+      @keyframes moveIcon {
+        50% {
+          transform: scale(1.15);
         }
       }
-      
-
-    } // .icon
+    }
 
     // To account for email's smaller height
     .email-icon {
