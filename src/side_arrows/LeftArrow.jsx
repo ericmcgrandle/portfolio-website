@@ -29,9 +29,8 @@ function LeftArrow() {
     history.push(newPath);
   }
 
-  // Handle the ability to use arrows to navigate pages
+  // Handle the ability to use left arrow to navigate pages
   useKeyPress('ArrowLeft');
-  useKeyPress('ArrowRight');
 
   // Hook
   function useKeyPress(targetKey) {

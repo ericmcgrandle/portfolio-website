@@ -1,4 +1,5 @@
 import { useHistory } from "react-router-dom";
+import { useEffect } from 'react';
 
 // styling
 import './styling/side_arrows.scss'
@@ -23,6 +24,27 @@ function RightArrow() {
     }
     
     history.push(newPath);
+  }
+
+  useKeyPress('ArrowRight');
+
+  // Hook
+  function useKeyPress(targetKey) {
+    function downHandler({ key }) {
+      if (key === targetKey) {
+        routeChange();
+      }
+    }
+
+    // Add event listeners
+    useEffect(() => {
+      window.addEventListener('keydown', downHandler);
+      
+      // Remove event listeners on cleanup
+      return () => {
+        window.removeEventListener('keydown', downHandler);
+      };
+    }, []);
   }
 
   return (
