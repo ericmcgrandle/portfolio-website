@@ -16,21 +16,18 @@
 
       a {
         width: 100%;
-        margin: 0em auto;
         text-align: center;
 
         // Zoom in / out animation
         img:hover {
-          animation: move 5s infinite ease-in-out;
-        }
-        @keyframes move {
-          50% {
-            transform: scale(1.25);
-          }
-          100% {
-            transform: scale(1);
+          animation: moveIcon 5s infinite ease-in-out;
+          @keyframes moveIcon {
+            50% {
+              transform: scale(1.15);
+            }
           }
         }
+        
       }
 
       .contact-text {
@@ -41,19 +38,27 @@
         color: white;         
       }
 
-      // Zoom in / out animation
-      .contact-text:hover {
-        animation: move 5s infinite ease-in-out;
-      }
-      @keyframes move {
-        50% {
-          transform: scale(1.5);
-        }
-        100% {
-          transform: scale(1);
-        }
+      // To account for img's smaller height
+      .email-text {
+        margin-top: 0px;
       }
 
+      // Zoom in / out animation
+      .contact-text:hover {
+        animation: moveText 5s infinite ease-in-out;
+        @keyframes moveText {
+          50% {
+            transform: scale(1.5);
+          }
+        }
+      }
+      
+
     } // .icon
+
+    // To account for email's smaller height
+    .email-icon {
+      margin-top: 16px;
+    }
   } // .icons
 } // .contact-me-main
