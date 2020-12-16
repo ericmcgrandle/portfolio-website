@@ -1,4 +1,8 @@
+import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+
+// Helper Functions
+import preloadImages from '../helper_functions/preloadImages'
 
 // styling
 import './styling/landing_page.scss';
@@ -7,6 +11,10 @@ import './styling/landing_page.scss';
 import symposium from '../projects/images/Symposium-homepage.png'
 
 function LandingPage() {
+
+  useEffect(() => {
+    preloadImages();
+  }, []);
 
   const history = useHistory();
 

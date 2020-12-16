@@ -26,15 +26,6 @@ function Projects() {
   const [pizzaHover, setPizzaHover] = useState(false);
   const [schedulerHover, setSchedulerHover] = useState(false);
 
-  // Preload GIFS
-  const gifs = [symposiumGif, goodAFPizzaGif, schedulerGif];
-  useEffect(() => {
-    gifs.forEach((gif) => {
-      console.log('loading gif', gif);
-      new Image().src = gif;
-    });
-  }, []);
-
   return (
     <Fragment>
       <NavBar />
